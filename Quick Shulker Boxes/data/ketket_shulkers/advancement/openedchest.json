@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "open_chest_minecart": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:chest_minecart"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ketket_shulkers:opened"
+    }
+  }

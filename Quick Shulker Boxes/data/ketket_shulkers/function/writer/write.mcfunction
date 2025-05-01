@@ -1,0 +1,15 @@
+$data modify entity @e[type=chest_minecart,scores={ket.ID=$(x)},limit=1] CustomName set from entity @s SelectedItem.components."minecraft:custom_name"
+$data modify entity @e[type=block_display,scores={ket.ID=$(x)},limit=1] block_state.Name set from entity @s SelectedItem.id
+
+scoreboard players set @s ket.for 26
+
+execute as @s[scores={ket.bool=0}] run function ketket_shulkers:writer/writetochest
+
+execute as @s[scores={ket.bool=1}] run summon hopper_minecart ~ ~2 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Enabled:0b,Tags:["ket.shulker","this"],Items:[{Slot:1b,id:"minecraft:shulker_box",count:1,components:{"minecraft:custom_data":{quick_shulker:1},"minecraft:container":[{slot:0,item:{id:"minecraft:knowledge_book",count:1}},{slot:1,item:{id:"minecraft:knowledge_book",count:1}},{slot:2,item:{id:"minecraft:knowledge_book",count:1}},{slot:3,item:{id:"minecraft:knowledge_book",count:1}},{slot:4,item:{id:"minecraft:knowledge_book",count:1}},{slot:5,item:{id:"minecraft:knowledge_book",count:1}},{slot:6,item:{id:"minecraft:knowledge_book",count:1}},{slot:7,item:{id:"minecraft:knowledge_book",count:1}},{slot:8,item:{id:"minecraft:knowledge_book",count:1}},{slot:9,item:{id:"minecraft:knowledge_book",count:1}},{slot:10,item:{id:"minecraft:knowledge_book",count:1}},{slot:11,item:{id:"minecraft:knowledge_book",count:1}},{slot:12,item:{id:"minecraft:knowledge_book",count:1}},{slot:13,item:{id:"minecraft:knowledge_book",count:1}},{slot:14,item:{id:"minecraft:knowledge_book",count:1}},{slot:15,item:{id:"minecraft:knowledge_book",count:1}},{slot:16,item:{id:"minecraft:knowledge_book",count:1}},{slot:17,item:{id:"minecraft:knowledge_book",count:1}},{slot:18,item:{id:"minecraft:knowledge_book",count:1}},{slot:19,item:{id:"minecraft:knowledge_book",count:1}},{slot:20,item:{id:"minecraft:knowledge_book",count:1}},{slot:21,item:{id:"minecraft:knowledge_book",count:1}},{slot:22,item:{id:"minecraft:knowledge_book",count:1}},{slot:23,item:{id:"minecraft:knowledge_book",count:1}},{slot:24,item:{id:"minecraft:knowledge_book",count:1}},{slot:25,item:{id:"minecraft:knowledge_book",count:1}},{slot:26,item:{id:"minecraft:knowledge_book",count:1}}]}}]}
+execute as @s[scores={ket.bool=1},nbt={SelectedItem:{components:{"minecraft:custom_data":{quick_shulker:1}}}}] run item replace entity @e[type=hopper_minecart,tag=this,sort=nearest,limit=1] container.0 from entity @s weapon.mainhand
+execute as @s[scores={ket.bool=1}] run data modify entity @e[type=hopper_minecart,tag=this,sort=nearest,limit=1] Items[0].components."minecraft:container" set from entity @e[type=hopper_minecart,tag=this,sort=nearest,limit=1] Items[1].components."minecraft:container"
+
+execute as @s[scores={ket.bool=1}] run function ketket_shulkers:writer/writetohand
+
+$data modify entity @e[type=marker,scores={ket.ID=$(x)},limit=1] data.Items set from entity @e[type=chest_minecart,scores={ket.ID=$(x)},limit=1] Items
+$data modify entity @e[type=marker,scores={ket.ID=$(x)},limit=1] data.hand set from entity @s SelectedItem.components."minecraft:container"

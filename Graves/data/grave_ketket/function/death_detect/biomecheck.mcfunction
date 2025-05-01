@@ -1,0 +1,15 @@
+execute if biome ~ ~ ~ #is_end run data modify entity @s block_state set value {Name:"end_stone_bricks"}
+execute if biome ~ ~ ~ #is_nether run data modify entity @s block_state set value {Name:"nether_bricks"}
+execute if biome ~ ~ ~ #is_badlands run data modify entity @s block_state set value {Name:"cut_red_sandstone"}
+execute if biome ~ ~ ~ #is_deep_ocean run data modify entity @s block_state set value {Name:"dark_prismarine"}
+execute if biome ~ ~ ~ #is_jungle run data modify entity @s block_state set value {Name:"bamboo_block"}
+execute if biome ~ ~ ~ #is_taiga run data modify entity @s block_state set value {Name:"mossy_cobblestone"}
+execute if biome ~ ~ ~ #is_mountain run data modify entity @s block_state set value {Name:"deepslate_bricks"}
+execute if biome ~ ~ ~ #is_savanna run data modify entity @s block_state set value {Name:"mossy_stone_bricks"}
+execute if biome ~ ~ ~ desert run data modify entity @s block_state set value {Name:"cut_sandstone"}
+execute if biome ~ ~ ~ mushroom_fields run data modify entity @s block_state set value {Name:"brown_mushroom_block"}
+execute if biome ~ ~ ~ snowy_plains run data modify entity @s block_state set value {Name:"blue_ice"}
+execute if biome ~ ~ ~ snowy_taiga run data modify entity @s block_state set value {Name:"blue_ice"}
+execute if biome ~ ~ ~ snowy_beach run data modify entity @s block_state set value {Name:"blue_ice"}
+execute if biome ~ ~ ~ cherry_grove run data modify entity @s block_state set value {Name:"stripped_cherry_wood"}
+execute if biome ~ ~ ~ pale_garden run data modify entity @s block_state set value {Name:"pale_moss_block"}

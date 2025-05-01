@@ -1,0 +1,1 @@
+execute as @a if items entity @s player.crafting.* minecraft:player_head[minecraft:custom_data={stackraft:1b}] run function ketket_stackraft:checker

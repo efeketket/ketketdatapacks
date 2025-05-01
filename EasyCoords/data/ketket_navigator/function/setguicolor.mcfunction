@@ -1,0 +1,1 @@
+execute if score @s guicolor > #7 num run scoreboard players set @s guicolor 1

@@ -1,0 +1,18 @@
+  {
+    "display": {
+      "icon": {
+        "id": "minecraft:glow_item_frame"
+      },
+      "title": "Shining",
+      "description": "Place item on a glowing hanging sign.",
+      "background": "minecraft:textures/block/cherry_planks.png",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ketket_signs:bhs_adv_2",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

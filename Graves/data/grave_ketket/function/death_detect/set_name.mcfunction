@@ -1,0 +1,1 @@
+$data modify entity @e[type=item_display,tag=justspawn,sort=nearest,limit=1] CustomName set value '$(name)\'s Grave' 

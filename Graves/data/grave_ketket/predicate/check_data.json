@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:storage",
+    "storage": "ket.settings",
+    "path": "is_enabled"
+  },
+  "range": 1
+}

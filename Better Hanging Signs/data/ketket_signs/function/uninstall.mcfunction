@@ -1,0 +1,2 @@
+kill @e[tag=ketketbetterhangingsign]
+tellraw @a ["","[Better Hanging Signs]",{"text":" Datapack successfully uninstalled. All materials cleared from loaded chunks. You can safely disable datapack.","color":"dark_green"}]

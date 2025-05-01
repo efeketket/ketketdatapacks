@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "minecraft:fill_player_head",
+                            "entity": "this"
+                        },{
+                            "function": "set_custom_data",
+                            "tag": "{grave:1b,headholder:1b}"
+                        }
+
+                    ]
+                    
+                    
+                }
+
+            ]
+            
+        }
+    ]
+}

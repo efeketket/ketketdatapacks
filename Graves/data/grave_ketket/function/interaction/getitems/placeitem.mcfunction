@@ -1,0 +1,1 @@
+$item replace entity @s container.$(Slot) from entity @e[type=hopper_minecart,tag=holder,sort=nearest,limit=1] container.0

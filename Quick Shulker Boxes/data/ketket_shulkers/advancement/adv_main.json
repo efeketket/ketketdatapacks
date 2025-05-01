@@ -1,0 +1,18 @@
+  {
+    "display": {
+      "icon": {
+        "id": "minecraft:shulker_box"
+      },
+      "title": "Quick Shulker Boxes",
+      "description": "Advancements of the Quick Shulker Boxes.",
+      "background": "minecraft:textures/block/cherry_planks.png",
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "ketkets:main",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location"
+      }
+    }
+  }
