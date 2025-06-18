@@ -8,6 +8,6 @@ tag @s remove menuon
 tag @s remove page1
 tag @s remove page2
 
-execute as @a if score @s unique_shopid = @e[type=interaction,tag=main,sort=nearest,limit=1] unique_shopid run tag @s remove menuopener
+function ketket_shops:click/removeopener with entity @e[type=item_display,tag=shopdata,limit=1,sort=nearest] item.components."minecraft:custom_data"
 
 scoreboard players set @s shop_page 0

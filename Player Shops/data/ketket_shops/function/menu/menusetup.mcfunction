@@ -1,5 +1,5 @@
-execute as @s[tag=!setup] run setblock ~ ~ ~ trapped_chest{CustomName:'{"text":" "}'} replace
-execute as @s[tag=!setup] at @s run data modify block ~ ~ ~ CustomName set value '{"text":"           ShopGUI","color":"dark_green","bold":true,"italic":false}'
+execute as @s[tag=!setup] run setblock ~ ~ ~ trapped_chest{CustomName:{text:" "}} replace
+execute as @s[tag=!setup] at @s run data modify block ~ ~ ~ CustomName set value {"text":"           ShopGUI",color:"dark_green",bold:true,italic:false}
 loot replace block ~ ~ ~ container.0 loot ketket_shops:earndisp
 loot replace block ~ ~ ~ container.1 loot ketket_shops:cproductdisp
 execute unless data block ~ ~ ~ Items[{Slot:2b}] run loot replace block ~ ~ ~ container.2 loot ketket_shops:emptyslot

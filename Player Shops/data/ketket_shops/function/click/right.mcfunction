@@ -1,17 +1,20 @@
 execute on target run scoreboard players set @s ket.bool 0
 execute on target run tag @s add this
 
-execute if data entity @e[tag=shopdata,type=item_display,sort=nearest,limit=1] item.components."minecraft:custom_data".Owner[{}] if score @s unique_shopid = @p[tag=this] unique_shopid on target run return run function ketket_shops:interactions/claimshop
+execute as @s[tag=!main] run return run data remove entity @s interaction
 
-data modify storage ownerfaceholder Owner set from entity @e[type=item_display,tag=shopdata,sort=nearest,limit=1] item.components."minecraft:custom_data".Owner 
-execute on target store result score @s ket.bool run data modify storage ownerfaceholder Owner set from entity @s UUID
-execute on target if score @s ket.bool matches 0 run function ketket_shops:click/rightowner
-execute on target if score @s ket.bool matches 1 run function ketket_shops:click/customer
+#checker
+execute store success score @s ket.bool on target run data modify entity @e[type=item_display,tag=shopdata,limit=1,sort=nearest] item.components."minecraft:custom_data".OwnerHolder set from entity @s UUID
+execute as @e[type=item_display,tag=shopdata,limit=1,sort=nearest] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
 
-#execute as @s[tag=!noowner,tag=main] at @s on target as @s[tag=!menuopener] if score @s unique_shopid = @p[tag=this] unique_shopid run function ketket_shops:click/rightowner
+#function ketket_shops:click/testmacro with entity @e[type=item_display,tag=shopdata,limit=1,sort=nearest] item.components."minecraft:custom_data"
 
+execute if score @s ket.bool matches 0 run function ketket_shops:click/rightowner
+execute if score @s ket.bool matches 1 on target run function ketket_shops:click/customer
 
+execute on target run tag @s remove this
 data remove entity @s interaction
+
 
 
 

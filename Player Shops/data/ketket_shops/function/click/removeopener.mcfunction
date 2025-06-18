@@ -1,0 +1,1 @@
+$execute as @p[nbt={UUID:$(Owner)}] run tag @s remove menuopener

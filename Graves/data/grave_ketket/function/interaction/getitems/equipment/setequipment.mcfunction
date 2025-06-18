@@ -1,5 +1,3 @@
-say hi
-
 summon minecraft:hopper_minecart ~ ~ ~ {Tags:["holder","graves"],PortalCooldown:-1,NoGravity:1b,Silent:1b,Invulnerable:1b,Items:[{Slot:0b,id:"minecraft:knowledge_book",count:1,components:{}}]}
 execute if data storage minecraft:inventory Equipment.head run function grave_ketket:interaction/getitems/equipment/head
 execute if data storage minecraft:inventory Equipment.feet run function grave_ketket:interaction/getitems/equipment/feet

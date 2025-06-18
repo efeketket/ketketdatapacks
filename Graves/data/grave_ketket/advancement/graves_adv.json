@@ -1,11 +1,11 @@
   {
     "display": {
       "icon": {
-        "item": "minecraft:poppy"
+        "id": "minecraft:poppy"
       },
       "title": "Ketket's Graves",
       "description": "Advancements of the Ketket's Graves.",
-      "background": "minecraft:textures/block/cherry_planks.png",
+      "background": "minecraft:block/cherry_planks",
       "announce_to_chat": false,
       "hidden": false
     },
