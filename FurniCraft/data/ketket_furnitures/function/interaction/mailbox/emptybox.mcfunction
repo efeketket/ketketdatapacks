@@ -11,9 +11,9 @@ execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter ma
 scoreboard players remove @e[type=interaction,sort=nearest,limit=1] mailstoragecounter 1
 execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches ..0 run scoreboard players set @e[type=interaction,sort=nearest,limit=1] mailstoragecounter 0
 
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 0 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"0 New Mail!"}'
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 1 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"1 New Mail!"}'
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 2 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"2 New Mail!"}'
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 3 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"3 New Mail!"}'
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 4 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"4 New Mail!"}'
-execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 5 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value '{"text":"5 New Mail!"}'
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 0 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"0 New Mail!"}
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 1 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"1 New Mail!"}
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 2 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"2 New Mail!"}
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 3 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"3 New Mail!"}
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 4 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"4 New Mail!"}
+execute if score @e[type=interaction,sort=nearest,limit=1] mailstoragecounter matches 5 run data modify entity @e[type=item_display,tag=mailstorage,limit=1,sort=nearest] CustomName set value {"text":"5 New Mail!"}

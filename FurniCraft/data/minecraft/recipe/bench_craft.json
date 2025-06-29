@@ -24,7 +24,7 @@
         ]
       },
       "minecraft:item_name": "Carpenter Bench",
-      "minecraft:custom_data": {"carpenterbench":1,"furniture":1}
+      "minecraft:custom_data": {"carpenterbench1":1,"furniture":1}
     },
     "count": 1
   },

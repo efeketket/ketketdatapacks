@@ -1,0 +1,1 @@
+$xp set @s $(currentLevel) levels

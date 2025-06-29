@@ -14,7 +14,7 @@ execute as @s[tag=page1,tag=setup] unless data block ~ ~ ~ {Items:[{Slot:26b,id:
 
 execute as @s[tag=page1,tag=setup] unless data block ~ ~ ~ Items[{Slot:8b}] run function ketket_shops:menu/modification/pageswitch
 
-execute as @s[tag=page1,tag=setup] unless score @s totalstock_chestcount matches 18 if data block ~ ~ ~ Items[{Slot:13b,id:"minecraft:trapped_chest"}] unless data block ~ ~ ~ Items[{Slot:13b,components:{"minecraft:custom_data":{ketket_shop:1b}}}] run function ketket_shops:menu/modification/upcheck
+execute as @s[tag=page1,tag=setup] unless score @s totalstock_chestcount matches 18 if data block ~ ~ ~ Items[{Slot:13b,id:"minecraft:chest"}] unless data block ~ ~ ~ Items[{Slot:13b,components:{"minecraft:custom_data":{ketket_shop:1b}}}] run function ketket_shops:menu/modification/upcheck
 execute as @s[tag=page1,tag=setup] if data block ~ ~ ~ Items[{Slot:13b}] unless data block ~ ~ ~ Items[{Slot:13b,components:{"minecraft:custom_data":{ketket_shop:1b}}}] if data entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".Product.id run execute as @e[type=item_display,sort=nearest,tag=shopdata,limit=1] run function ketket_shops:menu/modification/fillstorage
 
 execute as @s[tag=page1] run function ketket_shops:menu/menusetup

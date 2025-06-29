@@ -16,7 +16,7 @@ execute as @s[tag=east] at @s run summon minecraft:interaction ~ ~0.52 ~ {Tags: 
 
 function ketket_furnitures:place/settype/findtype
 
-execute as @s[tag=south] run setblock ~ ~1 ~ minecraft:chest[facing=north]{CustomName:'[{"text":"Cabinet"}]'}
-execute as @s[tag=north] at @s run setblock ~ ~1 ~ minecraft:chest[facing=south]{CustomName:'[{"text":"Cabinet"}]'}
-execute as @s[tag=east] at @s run setblock ~ ~1 ~ minecraft:chest[facing=west]{CustomName:'[{"text":"Cabinet"}]'}
-execute as @s[tag=west] at @s run setblock ~ ~1 ~ minecraft:chest[facing=east]{CustomName:'[{"text":"Cabinet"}]'}
+execute as @s[tag=south] run setblock ~ ~1 ~ minecraft:chest[facing=north]{CustomName:[{"text":"Cabinet"}]}
+execute as @s[tag=north] at @s run setblock ~ ~1 ~ minecraft:chest[facing=south]{CustomName:[{"text":"Cabinet"}]}
+execute as @s[tag=east] at @s run setblock ~ ~1 ~ minecraft:chest[facing=west]{CustomName:[{"text":"Cabinet"}]}
+execute as @s[tag=west] at @s run setblock ~ ~1 ~ minecraft:chest[facing=east]{CustomName:[{"text":"Cabinet"}]}

@@ -4,7 +4,7 @@
         "id": "minecraft:barrel"
       },
       "title": "Shopkeeper",
-      "description": "Claim your first shop.",
+      "description": "Place your first shop.",
       "background": "minecraft:textures/block/oak_planks.png",
       "announce_to_chat": true,
       "hidden": false

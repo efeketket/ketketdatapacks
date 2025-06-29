@@ -17,7 +17,7 @@ execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:magenta_wool"}] run tag
 execute if data block ~ ~ ~ Items[{Slot:9b,id:"minecraft:iron_ingot"}] run tag @s add thissub
 
 execute as @s[tag=!thissub] run tag @s remove slot10
-execute as @s[tag=!thissub] run tag @s add slot9
+#execute as @s[tag=!thissub] run tag @s add slot9
 execute as @s[tag=!thissub] run tag @s remove subon
 execute as @s[tag=!thissub] run tag @s add this
 

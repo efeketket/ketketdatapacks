@@ -1,0 +1,1 @@
+data modify block ~ ~ ~ Book.components set value {} 

@@ -1,0 +1,1 @@
+tellraw @s ["",{text:"["},{text:"Master of Enchantments",color:"light_purple",click_event:{action:"open_url",url:"https://ketket.dev"},hover_event:{action:"show_text",value:[{text:"Click here for more information about datapack."}]}},{text:"] "},{text:"You can’t upgrade this enchantment any further. It has reached its maximum level.",color:"white"}]

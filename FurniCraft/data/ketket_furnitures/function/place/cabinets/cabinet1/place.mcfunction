@@ -1,7 +1,7 @@
-execute as @s[tag=south] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=north]{CustomName:'[{"text":"Fridge"}]'}
-execute as @s[tag=west] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=east]{CustomName:'[{"text":"Fridge"}]'}
-execute as @s[tag=north] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=south]{CustomName:'[{"text":"Fridge"}]'}
-execute as @s[tag=east] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=west]{CustomName:'[{"text":"Fridge"}]'}
+execute as @s[tag=south] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=north]{CustomName:[{"text":"Fridge"}]}
+execute as @s[tag=west] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=east]{CustomName:[{"text":"Fridge"}]}
+execute as @s[tag=north] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=south]{CustomName:[{"text":"Fridge"}]}
+execute as @s[tag=east] at @s run setblock ~ ~2 ~ minecraft:dropper[facing=west]{CustomName:[{"text":"Fridge"}]}
 setblock ~ ~1 ~ minecraft:cauldron
 summon minecraft:interaction ~ ~ ~ {Tags: ["cabinet","cabinet1","furniture"],width:1.01,height:1.10}
 

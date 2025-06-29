@@ -28,6 +28,6 @@ execute if data block ~ ~1 ~ components."minecraft:custom_data"{pole1:1b} run re
 
 execute if data block ~ ~1 ~ components."minecraft:custom_data"{mailbox:1b} run return run function ketket_furnitures:place/mailbox
 
-execute if data block ~ ~1 ~ components."minecraft:custom_data"{carpenterbench:1b} run return run function ketket_furnitures:carpenterbench/place
+execute if data block ~ ~1 ~ components."minecraft:custom_data"{carpenterbench1:1b} run return run function ketket_furnitures:carpenterbench/place
 
 kill @s
