@@ -19,7 +19,8 @@ execute as @s[tag=north] run summon minecraft:text_display ~ ~0.1 ~0.1 {Tags:["p
 summon minecraft:text_display ~ ~0.34 ~ {Tags:["playershop","justspawn","displaytext"],text:"", see_through: 0b,background: 0,billboard:"center",interpolation_duration:0,start_interpolation:0,transformation:[0.500f, 0.000f, 0.000f,0.000f,0.000f, 0.500f, 0.000f,0.650f,0.000f, 0.000f, 0.500f,0.000f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.3f}
 
 data modify entity @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] item.components."minecraft:custom_data".Owner set from entity @p[scores={isPlaced=1}] UUID
-scoreboard players set @p[scores={isPlaced=1..}] isPlaced 0
+advancement grant @p[scores={isPlaced=1}] only ketket_shops:sp_adv_3 requirement 
+execute as @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
 
 execute as @e[tag=justspawn] run tag @s remove justspawn
 
