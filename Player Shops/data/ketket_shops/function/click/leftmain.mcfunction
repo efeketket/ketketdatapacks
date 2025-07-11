@@ -1,4 +1,4 @@
-execute on attacker as @s[tag=shop_admin] run return run function ketket_shops:interactions/remove/remove
+execute on attacker as @s[gamemode=creative] run return run function ketket_shops:interactions/remove/remove
 
 #checker
 execute store success score @s ket.bool on attacker run data modify entity @e[type=item_display,tag=shopdata,limit=1,sort=nearest] item.components."minecraft:custom_data".OwnerHolder set from entity @s UUID

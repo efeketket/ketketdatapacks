@@ -1,2 +1,3 @@
-$data modify storage ket.lectern holders.currentNeedingExp set from storage ket.lectern expinfo.$(currentEnch)[$(currentLevel)]
+$execute as @s[tag=!ket.plus] run data modify storage ket.lectern holders.currentNeedingExp set from storage ket.lectern expinfo.$(currentEnch)[$(currentLevel)]
+$execute as @s[tag=ket.plus] run data modify storage ket.lectern holders.currentNeedingExp set from storage ket.lectern expinfoplus.$(currentEnch)[$(currentLevel)]
 execute store result score @s ket.exp1 run data get storage ket.lectern holders.currentNeedingExp

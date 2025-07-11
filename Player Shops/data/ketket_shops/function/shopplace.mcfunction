@@ -22,6 +22,8 @@ data modify entity @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] item
 advancement grant @p[scores={isPlaced=1}] only ketket_shops:sp_adv_3 requirement 
 execute as @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
 
+scoreboard players set @p[scores={isPlaced=1..}] isPlaced 0
+
 execute as @e[tag=justspawn] run tag @s remove justspawn
 
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] totalstock_chestcount 1

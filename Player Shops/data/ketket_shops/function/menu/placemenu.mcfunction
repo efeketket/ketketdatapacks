@@ -1,5 +1,5 @@
 #unlocker
-#execute at @s as @e[type=item_display,tag=shopdata,sort=nearest,limit=1] run function ketket_shops:menu/unlock
+execute at @s as @e[type=item_display,tag=shopdata,sort=nearest,limit=1] run function ketket_shops:menu/unlock
 
 #hopper protector
 execute as @e[type=interaction,tag=playershop,tag=main] at @s if block ~ ~-1 ~ minecraft:hopper{TransferCooldown:3} run data modify block ~ ~-1 ~ TransferCooldown set value 9

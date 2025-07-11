@@ -26,6 +26,7 @@ scoreboard objectives remove wool_dye
 scoreboard objectives remove shop_page
 scoreboard objectives remove Sneaking_ps 
 scoreboard objectives remove math.division
+scoreboard objectives remove isPlaced 
 
 
 tellraw @a ["","[",{"text":"Player Shop","color":"red"},"]"," Ketket's Player Shops succesfully uninstalled. You can disable it."]
