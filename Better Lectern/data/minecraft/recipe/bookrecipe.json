@@ -15,7 +15,7 @@
     "id": "minecraft:written_book",
     "components": {
       "written_book_content": {
-        "title": "Master of Enchantments",
+        "title": "Book of Enchantments",
         "author" : "Mysterious Wizard",
         "pages": [{
             "text" : "Greetings, Seeker. If these words reach your mind with clarity, then yours is a rare wisdom — one not easily attained. Have the others sensed this truth? It is no small burden to walk a path unseen, to speak and remain unheard. I once tried to warn them... but they turned away. Thus fell our world into silence and ruin. Yet I believe... with the power you now hold, the cycle may still be broken.",

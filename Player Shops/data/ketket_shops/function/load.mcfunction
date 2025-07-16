@@ -1,4 +1,4 @@
-tellraw @a ["","[",{"text":"Player Shops v2.3","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"-> Modrinth","color":"white","clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/ketkets-player-shops/versions"}}]
+tellraw @a ["","[",{"text":"Player Shops","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"-> Modrinth","color":"white","clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/ketkets-player-shops/versions"}}]
 
 scoreboard objectives add isPlaced minecraft.used:minecraft.player_head
 scoreboard objectives add ket.place trigger
