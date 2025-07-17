@@ -10,7 +10,7 @@ scoreboard objectives add mailstoragecounter dummy
 scoreboard objectives add fc.switcher dummy
 scoreboard objectives add fc.bench_triggered minecraft.custom:trigger_trapped_chest
 
-scoreboard objectives add isPlaced minecraft.used:player_head
+scoreboard objectives add furniture.isPlaced minecraft.used:player_head
 
 scoreboard objectives add getcatalog trigger
 

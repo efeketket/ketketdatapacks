@@ -26,8 +26,8 @@ execute if data block ~ ~1 ~ components."minecraft:custom_data"{lamp1:1b} run re
 execute if data block ~ ~1 ~ components."minecraft:custom_data"{lamp2:1b} run return run function ketket_furnitures:place/lamps/lamp2
 execute if data block ~ ~1 ~ components."minecraft:custom_data"{pole1:1b} run return run function ketket_furnitures:place/lamps/pole1
 
-execute if data block ~ ~1 ~ components."minecraft:custom_data"{mailbox:1b} run return run function ketket_furnitures:place/mailbox
+execute if data block ~ ~1 ~ components."minecraft:custom_data"{mailbox:1b} unless entity @e[type=interaction,distance=..0.4,tag=mailbox,limit=1] run return run function ketket_furnitures:place/mailbox
 
-execute if data block ~ ~1 ~ components."minecraft:custom_data"{carpenterbench1:1b} run return run function ketket_furnitures:carpenterbench/place
+execute if data block ~ ~1 ~ components."minecraft:custom_data"{carpenterbench:1b} run return run function ketket_furnitures:carpenterbench/place
 
 kill @s
