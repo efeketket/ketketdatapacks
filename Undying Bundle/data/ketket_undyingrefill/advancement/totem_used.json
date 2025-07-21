@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "use_totem": {
+      "trigger": "minecraft:used_totem"
+    }
+  },
+  "rewards": {
+    "function": "ketket_undyingrefill:checkrefill"
+  }
+}

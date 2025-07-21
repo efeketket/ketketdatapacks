@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:profile": {
+              "id": [
+                -1527668027,
+                -557825967,
+                -1310714579,
+                -1847380270
+              ],
+              "properties": [
+                {
+                  "name": "textures",
+                  "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc5ZTliYzZmYzFjOWRhNWE5N2Q5YjY5ZWM4MDVjYTU1NzdjMTUxN2RmZjg5NTcwNmQ1ODNlNTg2NzFjYjczNiJ9fX0="
+                }
+              ]
+            },
+            "minecraft:custom_data": {
+              "totem_count": 64
+            }
+          },
+          "conditions": []
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:set_name",
+      "name": {
+        "text": "Bag of Undying",
+        "type": "text",
+        "color": "gold",
+        "bold": false,
+        "italic": false,
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      "conditions": []
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        "asdasd",
+        {
+          "entity": "this",
+          "nbt": "totem_count",
+          "interpret": true,
+          "bold": true
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}

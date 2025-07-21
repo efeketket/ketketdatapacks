@@ -1,0 +1,18 @@
+  {
+    "display": {
+      "icon": {
+        "id": "minecraft:shulker_box"
+      },
+      "title": "UndyingRefill",
+      "description": "Advancements of the UndyingRefill.",
+      "background": "minecraft:textures/item/totem_of_undying.png",
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "ketkets:main",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location"
+      }
+    }
+  }

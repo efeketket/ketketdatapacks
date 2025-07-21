@@ -14,9 +14,12 @@
   "result": {
     "id": "minecraft:written_book",
     "components": {
+      "custom_data": { 
+        "ket.lectern1": 1
+      },
       "written_book_content": {
         "title": "Book of Enchantments",
-        "author" : "Mysterious Wizard",
+        "author" : "Mysterious Wizard of the Void",
         "pages": [{
             "text" : "Greetings, Seeker. If these words reach your mind with clarity, then yours is a rare wisdom — one not easily attained. Have the others sensed this truth? It is no small burden to walk a path unseen, to speak and remain unheard. I once tried to warn them... but they turned away. Thus fell our world into silence and ruin. Yet I believe... with the power you now hold, the cycle may still be broken.",
             "obfuscated" : true

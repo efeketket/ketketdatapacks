@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted_book": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:bookrecipe"
+      }
+    }
+  },
+  "rewards": {
+    "function": "ketket_lectern:givebook"
+  }
+}

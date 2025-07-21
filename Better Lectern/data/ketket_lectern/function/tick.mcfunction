@@ -17,7 +17,7 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:nether_star"}}] at @s if block 
 execute as @e[type=marker,tag=ket.lectern] at @s run function ketket_lectern:marker/tick
 
 execute as @p[scores={ket.clicklectern=1},nbt={SelectedItem:{id:"minecraft:enchanted_book"}}] unless items entity @s weapon.offhand minecraft:book at @s anchored eyes facing entity @e[type=marker,tag=ket.lectern,distance=..5,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run function ketket_lectern:player/checkup
-execute as @p[scores={ket.clicklectern=1}] if items entity @s weapon.offhand minecraft:book at @s anchored eyes facing entity @e[type=marker,tag=ket.lectern,distance=..5,tag=1,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run function ketket_lectern:player/checksplit
+execute as @p[scores={ket.clicklectern=1}] if items entity @s weapon.offhand minecraft:book at @s anchored eyes facing entity @e[type=marker,tag=ket.lectern,distance=..5,tag=2,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run function ketket_lectern:player/checksplit
 
 execute as @p[scores={ket.clicklectern=1}] run scoreboard players set @s ket.clicklectern 0
 

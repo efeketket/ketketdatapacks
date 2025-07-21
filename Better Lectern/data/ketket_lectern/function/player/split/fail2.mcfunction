@@ -1,0 +1,1 @@
+say You can't split it without holding an enchanted book in your main hand.
