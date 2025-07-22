@@ -1,11 +1,11 @@
   {
     "display": {
       "icon": {
-        "id": "minecraft:shulker_box"
+        "id": "minecraft:totem_of_undying"
       },
       "title": "UndyingRefill",
       "description": "Advancements of the UndyingRefill.",
-      "background": "minecraft:textures/item/totem_of_undying.png",
+      "background": "minecraft:textures/item/birch_planks.png",
       "announce_to_chat": false,
       "hidden": false
     },
