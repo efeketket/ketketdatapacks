@@ -1,1 +1,1 @@
-say Not enough book level.
+tellraw @s ["",{text:"["},{text:"Master of Enchantments",color:"light_purple",click_event:{action:"open_url",url:"https://ketket.dev"},hover_event:{action:"show_text",value:[{text:"Click here for more information about datapack."}]}},{text:"] "},{text:"Not enough Wizard book level. You need to level 2 lectern to split enchantments. You can upgrade lectern with Dragon's Breath.",color:"white"}]

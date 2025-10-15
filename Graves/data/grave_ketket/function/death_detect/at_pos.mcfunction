@@ -1,6 +1,5 @@
-data modify entity @s Pos set from storage minecraft:death Pos
-
-execute run forceload add ~ ~
+execute store result score @s ket.voidfacer run data get entity @s Pos[1]
+execute if dimension minecraft:the_end if score @s ket.voidfacer matches ..0 at @s in minecraft:the_end run data modify entity @s Pos[1] set value 1.0d
 
 ##
 execute run data modify storage minecraft:inventory Inventory set from entity @p[tag=diedplayer,limit=1] Inventory
@@ -39,5 +38,4 @@ experience set @p[tag=diedplayer] 0 points
 
 
 execute run execute as @e[tag=justspawn] run tag @s remove justspawn
-execute run forceload remove ~ ~
 kill @s

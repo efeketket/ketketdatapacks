@@ -9,5 +9,5 @@ data modify entity @e[tag=this,type=hopper_minecart,sort=nearest,limit=1] Items[
 
 item replace entity @s weapon.mainhand from entity @e[tag=this,type=hopper_minecart,sort=nearest,limit=1] container.0
 
-item replace entity @e[tag=this,type=hopper_minecart,sort=nearest,limit=1] container.0 with air
+item replace entity @e[tag=this,type=hopper_minecart,sort=nearest,limit=1] container.0 with minecraft:air
 kill @e[type=hopper_minecart,tag=this,sort=nearest]

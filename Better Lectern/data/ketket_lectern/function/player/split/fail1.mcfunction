@@ -1,1 +1,1 @@
-say You don't have enough Dragon's Breath to split the enchantment.
+tellraw @s ["",{text:"["},{text:"Master of Enchantments",color:"light_purple",click_event:{action:"open_url",url:"https://ketket.dev"},hover_event:{action:"show_text",value:[{text:"Click here for more information about datapack."}]}},{text:"] "},{text:"You don't have the selected enchantment on your item.",color:"white"}]

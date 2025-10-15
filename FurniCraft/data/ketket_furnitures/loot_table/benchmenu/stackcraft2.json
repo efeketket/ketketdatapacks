@@ -17,7 +17,7 @@
               },
               {
                 "function": "set_custom_data",
-                "tag": "{carpenterbench:1b}"
+                "tag": "{carpenterbench1:1b}"
               }
             ]
           }

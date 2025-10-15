@@ -29,7 +29,7 @@ execute as @s[tag=north] unless entity @e[distance=..1,tag=longer,tag=north,tag=
 execute as @s[tag=east] unless entity @e[distance=..1,tag=longer,tag=east,tag=left] positioned ~ ~1 ~ if entity @e[type=block_display,tag=curtain1,distance=..0.5,tag=east,tag=top] if entity @e[tag=left,tag=outter,tag=curtain1,distance=..0.5] positioned ~-0.35 ~-2 ~ run summon minecraft:block_display ~ ~1 ~ {Tags:["furniture","left","curtain1","wool","east","longer","east","new"],block_state:{Name:"minecraft:white_wool"},interpolation_duration:0,start_interpolation:0,transformation:[0.100f, 0.000f, 0.000f,0.400f,0.000f, 1.000f, 0.000f,-0.450f,0.000f, 0.000f, 0.100f,-0.440f,0.000f, 0.000f, 0.000f,1.000f]}
 execute as @s[tag=east] unless entity @e[distance=..1,tag=longer,tag=east,tag=right] positioned ~ ~1 ~ if entity @e[type=block_display,tag=curtain1,distance=..0.5,tag=east,tag=top] if entity @e[tag=right,tag=outter,tag=curtain1,distance=..0.5] positioned ~-0.35 ~-2 ~ run summon minecraft:block_display ~ ~1 ~ {Tags:["furniture","right","curtain1","wool","east","longer","east","new"],block_state:{Name:"minecraft:white_wool"},interpolation_duration:0,start_interpolation:0,transformation:[0.100f, 0.000f, 0.000f,0.400f,0.000f, 1.000f, 0.000f,-0.450f,0.000f, 0.000f, 0.100f,0.340f,0.000f, 0.000f, 0.000f,1.000f]}
 
-execute as @e[tag=new,type=block_display,tag=curtain1] at @s run data modify entity @s block_state set from entity @e[tag=!new,tag=curtain1,sort=nearest,limit=1,tag=!closed] block_state
+execute as @e[tag=new,type=block_display,tag=curtain1] at @s run data modify entity @s block_state set from entity @e[tag=!new,tag=top,tag=curtain1,sort=nearest,limit=1,tag=!closed] block_state
 execute as @e[tag=new,type=block_display,tag=curtain1] run tag @s remove new
 
 

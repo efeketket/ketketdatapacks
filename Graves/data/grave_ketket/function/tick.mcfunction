@@ -1,5 +1,5 @@
 ##> Death Detector
-execute as @p[scores={ket.death_grave=1},gamemode=!spectator,gamemode=!creative] run function grave_ketket:death_detect/died
+execute as @p[scores={ket.death_grave=1},gamemode=!spectator] run function grave_ketket:death_detect/died
 execute as @p[scores={ket.death_grave=1..}] run scoreboard players set @s ket.death_grave 0
 
 ##> Click Checker

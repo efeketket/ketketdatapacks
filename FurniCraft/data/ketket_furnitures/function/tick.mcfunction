@@ -18,5 +18,5 @@ scoreboard players set @p[scores={fc.bench_triggered=1..}] fc.bench_triggered 0
 scoreboard players enable @a[gamemode=creative] getcatalog
 execute as @p[scores={getcatalog=1..}] at @s run function ketket_furnitures:catalog/getcatalog
 
-execute as @e[nbt={Item:{components:{"minecraft:custom_data":{carpenterbench:1b}}}},type=item] run kill @s
-execute as @p[nbt={Inventory:[{components:{"minecraft:custom_data":{carpenterbench:1b}}}]}] run function ketket_furnitures:clearitems
+execute as @e[nbt={Item:{components:{"minecraft:custom_data":{carpenterbench1:1b}}}},type=item] run kill @s
+execute as @p[nbt={Inventory:[{components:{"minecraft:custom_data":{carpenterbench1:1b}}}]}] run function ketket_furnitures:clearitems

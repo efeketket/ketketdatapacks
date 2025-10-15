@@ -1,4 +1,4 @@
-execute anchored eyes facing entity @e[type=marker,tag=ket.lectern,tag=2,distance=..5,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run tag @s add ket.plus
+execute anchored eyes facing entity @e[type=marker,tag=ket.lectern,tag=3,distance=..5,sort=nearest,limit=1] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run tag @s add ket.plus
 
 execute at @e[type=marker,tag=ket.lectern,distance=..5,sort=nearest,limit=1] run function ketket_lectern:player/closemenu
 

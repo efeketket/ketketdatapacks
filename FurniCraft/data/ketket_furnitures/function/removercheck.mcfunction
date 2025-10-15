@@ -27,7 +27,7 @@ execute as @s[tag=cabinet2,tag=!break] positioned ~ ~0.48 ~ run function ketket_
 execute as @s[tag=cabinet3,tag=!break] positioned ~ ~ ~ run function ketket_furnitures:remover/cabinets/cabinet3
 
 execute as @s[tag=lamp1] run particle block{block_state:"minecraft:iron_bars"} ~ ~0.2 ~ 0 0 0 1 40 force
-execute as @s[tag=lamp2] run particle block{block_state:"minecraft:chain"} ~ ~0.2 ~ 0 0 0 1 40 force
+execute as @s[tag=lamp2] run particle block{block_state:"minecraft:iron_chain"} ~ ~0.2 ~ 0 0 0 1 40 force
 execute as @s[tag=poleblock] positioned ~ ~-0.5 ~ run function ketket_furnitures:remover/lamps/lamp1/pole1
 execute as @s[tag=lamp1] positioned ~ ~1 ~ run function ketket_furnitures:remover/lamps/lamp1/lamp1
 execute as @s[tag=lamp2] positioned ~ ~1 ~ run function ketket_furnitures:remover/lamps/lamp2

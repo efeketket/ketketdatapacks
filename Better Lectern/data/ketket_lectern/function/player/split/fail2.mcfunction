@@ -1,1 +1,1 @@
-say You can't split it without holding an enchanted book in your main hand.
+tellraw @s ["",{text:"["},{text:"Master of Enchantments",color:"light_purple",click_event:{action:"open_url",url:"https://ketket.dev"},hover_event:{action:"show_text",value:[{text:"Click here for more information about datapack."}]}},{text:"] "},{text:"You can't split it without holding an enchanted book in your main hand.",color:"white"}]

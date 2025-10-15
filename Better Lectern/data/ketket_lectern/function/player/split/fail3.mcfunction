@@ -1,1 +1,1 @@
-say You don't have the selected enchantment on your item.
+tellraw @s ["",{text:"["},{text:"Master of Enchantments",color:"light_purple",click_event:{action:"open_url",url:"https://ketket.dev"},hover_event:{action:"show_text",value:[{text:"Click here for more information about datapack."}]}},{text:"] "},{text:"You can't split it without holding a regular book in your off hand.",color:"white"}]
