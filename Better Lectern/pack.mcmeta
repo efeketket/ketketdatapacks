@@ -1,6 +1,7 @@
 {
     "pack": {
-        "pack_format": 71,
+        "min_format": 88.0,
+        "max_format": 88.0,
         "description": "\u00a76\u00a7lKetket's\u00a7e Better Lectern\u00a7r\n\u00a77Only work with 1.21+"
     }
 }

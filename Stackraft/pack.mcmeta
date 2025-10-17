@@ -2,7 +2,8 @@
     "pack": {
         "name": "Stackraft",
         "id": "0",
-        "pack_format": 61,
+        "min_format": 88.0,
+        "max_format": 88.0,
         "authors": [
             "efeketket"
         ],
