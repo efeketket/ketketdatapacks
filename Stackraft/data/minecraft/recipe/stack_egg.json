@@ -23,7 +23,7 @@
                   }
               ]
           },
-          "minecraft:item_name": "{\"text\":\"Compressed Egg\",\"color\":\"white\",\"bold\":false,\"italic\":false}",
+          "minecraft:item_name": "Compressed Egg",
           "minecraft:custom_data": {"stackraft":1}
         }
     }

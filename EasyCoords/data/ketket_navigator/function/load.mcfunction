@@ -26,7 +26,7 @@ scoreboard players set #7 num 7
 
 scoreboard objectives add daycounter_k dummy
 scoreboard objectives add daytime_k dummy
-
+scoreboard players set #daycount daycounter_k 0
 
 scoreboard objectives add start.timer trigger
 scoreboard objectives add stop.timer trigger

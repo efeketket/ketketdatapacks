@@ -1,10 +1,6 @@
-execute store result score @s ket.voidfacer run data get entity @s Pos[1]
-execute if dimension minecraft:the_end if score @s ket.voidfacer matches ..0 at @s in minecraft:the_end run data modify entity @s Pos[1] set value 1.0d
-
 ##
 execute run data modify storage minecraft:inventory Inventory set from entity @p[tag=diedplayer,limit=1] Inventory
 execute run data modify storage minecraft:inventory Equipment set from entity @p[tag=diedplayer,limit=1] equipment
-
 execute run data modify storage minecraft:inventory XpLevel set from entity @p[tag=diedplayer,limit=1] XpLevel
 
 execute run summon interaction ~0.5 ~ ~0.5 {Tags:["grave","justspawn"],width:0.5f,height:0.9f,Passengers:[{id:"minecraft:item_display",Tags:["grave","justspawn"],item:{components:{"minecraft:custom_data":{Inventory:[],Equipment:[],Exp:[],NameCopy:[""]}},id:"minecraft:player_head",count:1},Tags:["grave","justspawn","holder"],CustomName:'{"text":"Grave"}',CustomNameVisible:1b,transformation:[-0.550f, 0.000f, 0.000f,0.000f,0.000f, 0.550f, 0.000f,0.485f,0.000f, 0.000f, 0.550f,0.000f,0.000f, 0.000f, 1.000f,-1.500f]}]}
@@ -23,7 +19,6 @@ kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{grave:1b,headh
 
 execute run data modify entity @e[type=item_display,tag=grave,tag=holder,limit=1,sort=nearest,tag=justspawn] item.components."minecraft:custom_data".Inventory set from storage minecraft:inventory Inventory
 execute run data modify entity @e[type=item_display,tag=grave,tag=holder,limit=1,sort=nearest,tag=justspawn] item.components."minecraft:custom_data".Equipment set from storage minecraft:inventory Equipment
-
 execute run data modify entity @e[type=item_display,tag=grave,tag=holder,limit=1,sort=nearest,tag=justspawn] item.components."minecraft:custom_data".Exp set from storage minecraft:inventory XpLevel
 
 

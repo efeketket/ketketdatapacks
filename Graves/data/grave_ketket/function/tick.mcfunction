@@ -1,10 +1,10 @@
 ##> Death Detector
-execute as @p[scores={ket.death_grave=1},gamemode=!spectator] run function grave_ketket:death_detect/died
+execute as @p[scores={ket.death_grave=1},gamemode=!spectator,gamemode=!creative] run function grave_ketket:death_detect/died
 execute as @p[scores={ket.death_grave=1..}] run scoreboard players set @s ket.death_grave 0
 
 ##> Click Checker
-execute as @e[type=interaction,tag=grave,nbt={attack:{}}] at @s run function grave_ketket:click/left
-execute as @e[type=interaction,tag=grave,nbt={interaction:{}}] at @s run function grave_ketket:click/right
+execute as @e[tag=grave,type=interaction,nbt={attack:{}}] at @s run function grave_ketket:click/left
+execute as @e[tag=grave,type=interaction,nbt={interaction:{}}] at @s run function grave_ketket:click/right
 
 ##> trigger
 scoreboard players enable @a[tag=grave_admin] ket.grave_settings

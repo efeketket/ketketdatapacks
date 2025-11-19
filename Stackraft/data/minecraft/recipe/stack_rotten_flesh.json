@@ -23,7 +23,7 @@
                   }
               ]
           },
-          "minecraft:item_name": "{\"text\":\"Compressed Rotten Flesh\",\"color\":\"white\",\"bold\":false,\"italic\":false}",
+          "minecraft:item_name": "Compressed Rotten Flesh",
           "minecraft:custom_data": {"stackraft":1}
         }
     }

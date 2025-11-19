@@ -23,7 +23,7 @@
                   }
               ]
           },
-          "minecraft:item_name": "{\"text\":\"Compressed Blaze Rod\",\"color\":\"white\",\"bold\":false,\"italic\":false}",
+          "minecraft:item_name": "Compressed Blaze Rod",
           "minecraft:custom_data": {"stackraft":1}
         }
     }

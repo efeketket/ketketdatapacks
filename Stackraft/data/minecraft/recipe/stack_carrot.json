@@ -23,7 +23,7 @@
                   }
               ]
           },
-          "minecraft:item_name": "{\"text\":\"Compressed Carrot\",\"color\":\"white\",\"bold\":false,\"italic\":false}",
+          "minecraft:item_name": "Compressed Carrot",
           "minecraft:custom_data": {"stackraft":1}
         }
     }

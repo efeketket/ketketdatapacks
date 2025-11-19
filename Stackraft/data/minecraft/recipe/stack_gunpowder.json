@@ -23,7 +23,7 @@
                   }
               ]
           },
-          "minecraft:item_name": "{\"text\":\"Compressed Gunpowder\",\"color\":\"white\",\"bold\":false,\"italic\":false}",
+          "minecraft:item_name": "Compressed Gunpowder",
           "minecraft:custom_data": {"stackraft":1}
         }
     }

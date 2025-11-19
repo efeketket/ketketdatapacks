@@ -1,4 +1,4 @@
-execute as @e[type=marker,tag=daycounter] run function ketket_navigator:daycounter
+execute store result score #daycount daycounter_k run time query day
 
 #display
 execute as @e[type=player,tag=coordinatesondisplay] at @s run function ketket_navigator:coordinatesondisplay
