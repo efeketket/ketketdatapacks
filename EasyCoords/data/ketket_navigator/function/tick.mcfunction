@@ -5,9 +5,7 @@ execute as @e[type=player,tag=coordinatesondisplay] at @s run function ketket_na
 
 #efeketket
 execute as @a[scores={death_k=1..}] at @s run function ketket_navigator:senddeathloc
-
 execute as @e[tag=kk.timer,type=player] run function ketket_navigator:timer/counttimer
-
 
 #triggers
 scoreboard players enable @a showcoordinates 

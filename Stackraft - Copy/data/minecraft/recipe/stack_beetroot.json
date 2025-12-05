@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#":["minecraft:beetroot"]
+    },
+    "result": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:profile": {
+              "id": [
+                1946302913,235456678,-1143378508,857968663
+              ],
+              "properties": [
+                  {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmMzZlYTIyOGM0ZmQ5YWZlZDVhZGQ2ZDA1MjZkZTcxYjdhYzA1NTllYWJmYzJmNjBkZTZjNGFhNzMzZjUifX19"
+                  }
+              ]
+          },
+          "minecraft:item_name": "Compressed Beetroot",
+          "minecraft:custom_data": {"stackraft":1}
+        }
+    }
+}

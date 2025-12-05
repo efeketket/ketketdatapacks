@@ -1,4 +1,4 @@
-execute as @s[tag=setup] at @s run data modify block ~ ~ ~ CustomName set value '{"text":"        Set Your Shop","color":"dark_green","bold":true,"italic":false}'
+execute as @s[tag=setup] at @s run data modify block ~ ~ ~ CustomName set value {"text":"        Set Your Shop","color":"dark_green","bold":true,"italic":false}
 
 
 execute as @s[tag=!setup] unless data block ~ ~ ~ {Items:[{Slot:26b,id:"minecraft:lime_dye",components:{"minecraft:custom_data":{ketket_shop:1b}}}]} run function ketket_shops:menu/page2/savechanges

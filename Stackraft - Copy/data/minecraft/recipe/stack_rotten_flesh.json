@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": ["minecraft:rotten_flesh"]
+    },
+    "result": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:profile": {
+              "id": [
+                -475582103,547178088,-1374648582,2044279915
+              ],
+              "properties": [
+                  {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RhNmJhOTU1N2ZhMjNiNjBlOWFmODYyY2U4ZTkwNmIxMzlkNDljYzkwOTUzZDQ1MTRjZDA2OGQwNThjMTgxNyJ9fX0"
+                  }
+              ]
+          },
+          "minecraft:item_name": "Compressed Rotten Flesh",
+          "minecraft:custom_data": {"stackraft":1}
+        }
+    }
+}

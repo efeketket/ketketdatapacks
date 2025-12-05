@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand name_tag[] run function ketket_npc:modifier/setskin
