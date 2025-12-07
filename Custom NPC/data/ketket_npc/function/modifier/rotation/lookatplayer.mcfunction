@@ -1,0 +1,2 @@
+execute as @e[tag=this,type=mannequin,limit=1,tag=ket.npc,tag=!onplayer] run return run tag @s add onplayer
+execute as @e[tag=this,type=mannequin,limit=1,tag=ket.npc,tag=onplayer] run tag @s remove onplayer

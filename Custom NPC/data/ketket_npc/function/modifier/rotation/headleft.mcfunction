@@ -1,0 +1,1 @@
+tp @e[tag=this,tag=ket.npc,type=mannequin,sort=nearest,limit=1,tag=ket.npc] ~ ~ ~ ~-15 ~

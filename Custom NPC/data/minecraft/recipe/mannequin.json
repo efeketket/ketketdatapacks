@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "BAB",
+        "#B#"
+    ],
+    "key": {
+        "#": "minecraft:rotten_flesh",
+        "B": "minecraft:bone",
+        "A": "minecraft:armor_stand"
+    },
+    "result": {
+        "id": "minecraft:cod_spawn_egg",
+        "count": 1,
+    "components": {
+      "minecraft:item_name": "Mannequin Spawn Egg",
+      "minecraft:custom_data": {"ket.npc":1},
+        "entity_data": {
+            "id": "cod",
+            "Tags": [
+            "ket.npc"
+          ],
+          "DeathLootTable": "minecraft:empty",
+            "Silent": true,
+            "NoAI": true,
+            "Invulnerable": true            
+        }
+
+    }
+  },
+    "show_notification": false
+}

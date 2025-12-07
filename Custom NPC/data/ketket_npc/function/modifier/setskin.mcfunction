@@ -1,1 +1,1 @@
-data modify entity @e[type=mannequin,sort=nearest,limit=1] profile.name set from entity @s SelectedItem.components."minecraft:custom_name"
+data modify entity @e[tag=this,tag=ket.npc,type=mannequin,sort=nearest,limit=1] profile.name set from entity @s SelectedItem.components."minecraft:custom_name"
