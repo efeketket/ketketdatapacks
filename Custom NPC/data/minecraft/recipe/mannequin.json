@@ -24,7 +24,8 @@
           "DeathLootTable": "minecraft:empty",
             "Silent": true,
             "NoAI": true,
-            "Invulnerable": true            
+            "Invulnerable": true,
+            "DeathLootTableSeed": 0          
         }
 
     }

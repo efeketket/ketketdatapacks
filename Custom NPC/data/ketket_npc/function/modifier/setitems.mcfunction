@@ -1,5 +1,6 @@
 summon minecraft:hopper_minecart ~ ~ ~ {LootTable:"minecraft:empty",Tags:["ket.npc","holder"]}
 
+execute if items entity @s weapon.mainhand minecraft:carved_pumpkin run return run function ketket_npc:modifier/items/head
 execute if items entity @s weapon.mainhand minecraft:leather_helmet run return run function ketket_npc:modifier/items/head
 execute if items entity @s weapon.mainhand minecraft:copper_helmet run return run function ketket_npc:modifier/items/head
 execute if items entity @s weapon.mainhand minecraft:chainmail_helmet run return run function ketket_npc:modifier/items/head
@@ -15,6 +16,7 @@ execute if items entity @s weapon.mainhand minecraft:iron_chestplate run return 
 execute if items entity @s weapon.mainhand minecraft:golden_chestplate run return run function ketket_npc:modifier/items/chest
 execute if items entity @s weapon.mainhand minecraft:diamond_chestplate run return run function ketket_npc:modifier/items/chest
 execute if items entity @s weapon.mainhand minecraft:netherite_chestplate run return run function ketket_npc:modifier/items/chest
+execute if items entity @s weapon.mainhand minecraft:elytra run return run function ketket_npc:modifier/items/chest
 
 execute if items entity @s weapon.mainhand minecraft:leather_leggings run return run function ketket_npc:modifier/items/legs
 execute if items entity @s weapon.mainhand minecraft:copper_leggings run return run function ketket_npc:modifier/items/legs
