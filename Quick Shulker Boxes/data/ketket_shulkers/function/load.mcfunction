@@ -2,7 +2,7 @@ scoreboard objectives add ket.for dummy
 scoreboard objectives add ket.bool dummy
 scoreboard objectives add ket.shifting minecraft.custom:sneak_time
 
-tellraw @a ["","[",{"text":"Quick Shulker Boxes v0.6","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"-> Modrinth","color":"white","clickEvent":{"action":"open_url","value":"https://modrinth.com/project/quick-shulker-boxes"}}]
+tellraw @a ["","[",{"text":"Quick Shulker Boxes v1.0","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/quick-shulker-boxes"}}]
 
 scoreboard objectives add ket.ID dummy
 scoreboard players add #ID ket.ID 0

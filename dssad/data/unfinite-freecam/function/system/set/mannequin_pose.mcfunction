@@ -1,0 +1,3 @@
+execute if predicate unfinite-freecam:sneaking run data merge entity @n[type=mannequin,tag=new_dummy] {pose:"crouching"}
+execute if entity @s[nbt={attributes:[{base:1d,id:"minecraft:scale"}]}] run execute at @s positioned ~ ~1 ~ unless entity @s[dy=.5] run data merge entity @n[type=mannequin,tag=new_dummy] {pose:"swimming"}
+#execute unless data entity @s {SleepTimer:0s} run data merge entity @n[type=mannequin,tag=new_dummy] {pose:"sleeping"}

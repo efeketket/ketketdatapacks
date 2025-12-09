@@ -2,7 +2,6 @@
 execute as @p[nbt={SelectedItem:{id:"minecraft:player_head",components:{"minecraft:custom_data":{furniture:1b}}}}] run function ketket_furnitures:placer
 execute as @p[scores={furniture.isPlaced=1..}] unless data entity @s SelectedItem run function ketket_furnitures:placer
 
-
 execute as @e[tag=furniture,type=interaction] at @s if entity @e[type=player,distance=..8] at @s run function ketket_furnitures:furniture_tick2
 execute as @e[tag=blockchecker,type=#ketket_furnitures:blockcheckers] at @s if entity @e[type=player,distance=..8] at @s run function ketket_furnitures:furniture_tick
 

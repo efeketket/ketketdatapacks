@@ -13,7 +13,7 @@ execute as @p[scores={ket.grave_settings=1..}] run function grave_ketket:grave_s
 scoreboard players enable @a ket.setcooldown
 execute as @p[scores={ket.setcooldown=1..}] run function grave_ketket:setcooldown
 
-execute at @a run gamerule keepInventory true
+execute at @a run gamerule minecraft:keep_inventory true
 
 ##> Cooldown Counter
 execute if predicate grave_ketket:get_grave_cooldown run execute as @e[type=interaction,tag=grave] run function grave_ketket:cooldown

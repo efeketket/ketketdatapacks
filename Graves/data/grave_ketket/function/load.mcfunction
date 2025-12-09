@@ -1,5 +1,5 @@
-data modify storage minecraft:ket.settings version set value "Graves v1.3"
-tellraw @a [{"text":"["},{"nbt":"version","storage":"ket.settings","color":"gold"},{"text":"]"},{"text":" Datapack has been reloaded. Check if there is a new version available.","color":"green"},{"text":"-> Modrinth","clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/ketket-graves"}}]
+tellraw @a ["","[",{"text":"Graves v2.0","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/ketket-graves"}}]
+
 
 scoreboard objectives add ket.ID dummy
 scoreboard objectives add ket.grave dummy

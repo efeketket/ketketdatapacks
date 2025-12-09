@@ -10,8 +10,8 @@ data modify storage death Pos set value [0.0d,0.0d,0.0d]
 data modify storage inventories Inventory set value []
 
 # nonvanilla versions
-execute in overworld run gamerule keepInventory true
-execute in the_nether run gamerule keepInventory true
-execute in the_end run gamerule keepInventory true
+execute in overworld run gamerule minecraft:keep_inventory true
+execute in the_nether run gamerule minecraft:keep_inventory true
+execute in the_end run gamerule minecraft:keep_inventory true
 
 execute as @s run function grave_ketket:grave_settings

@@ -1,0 +1,4 @@
+scoreboard players reset @s unfinite-freecam
+$tellraw @s [{"color":"#C4C4C4","text":"["},{"color":"#7BD964","obfuscated":true,"text":"||"},{"color":"#8F4E9A","text":"U"},{"color":"#9554A1","text":"n"},{"color":"#9A59A7","text":"f"},{"color":"#A05FAE","text":"i"},{"color":"#A565B5","text":"n"},{"color":"#AB6ABC","text":"i"},{"color":"#B170C2","text":"t"},{"color":"#B676C9","text":"e "},{"color":"#BC7BD0","text":"F"},{"color":"#C181D7","text":"r"},{"color":"#C787DD","text":"e"},{"color":"#CD8CE4","text":"e"},{"color":"#D292EB","text":"c"},{"color":"#D898F2","text":"a"},{"color":"#E3A3FF","text":"m"},{"color":"#7BD964","obfuscated":true,"text":"||"},{"color":"#C4C4C4","text":"] "},{"color":"red","text":"❌ "},{"color":"white","obfuscated":false,"text":"You can't use it right now."},{"color":"gray","text":"\n        (Reason: $(reason))"}]
+tag @e remove unfinite_freecam_mobtarget
+scoreboard players reset @a unfinite-freecam

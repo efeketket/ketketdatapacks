@@ -1,0 +1,49 @@
+Thanks for using Unfinite Freecam! (Made by Pikatscha)
+
+Feel free to use this datapack in own datapack projects, but pls consider crediting.
+-----------------------------------------------------
+
+Links:
+Avavible under: https://modrinth.com/datapack/unfinite-freecam
+Bugs found or feature suggestion? Join my discord: https://discord.gg/6tUUUNagug
+
+More Informations on how to use the datapack:
+-----------------------------------------------------
+
+Regular:
+    /trigger unfinite-freecam   || Enter and exit the freecam (Can be used by every player if not disabled by an admin)
+
+Admin Commands:
+   /function unfinite_freecam:admin/.settings
+        - Trigger Freecam   || Enables all players to use /trigger unfinite-freecam (➡ Regular Usecase) - Doesn't effect the external freecam enter command
+        - Freecam Distance  || Radius in blocks the player can use the freecam - No impact on external freecam use
+        - Block Spectating  || When disabled players are forced to exit freecam in blocks
+        - Block Darkness    || When enabled plyers get the darkness effect in blocks
+        - Nametags          || Toggles if mannequins have visibe Nametags
+        - Locatorbar        || Toggles if mannequins appear in the locatorbar
+        - Vehicle Movement  || Allows using the freecam in moving vehicle entitys (For example: Travelling in a minecart)
+        - Export Settings   || Sends a chat message with the /data merge command for the current settings as a sugguested command via clickevent
+
+    External Use Commands:
+
+    /function unfinite-freecam:admin/exteral/enter
+        || The executing player enters the freecam, but without the effects from the regular trigger command
+
+    /function unfinite-freecam:admin/exteral/exit
+        || The executing player exits the freecam, but without the effects from the regular trigger command
+
+    /function unfinite-freecam:admin/exteral/disconnect_player
+        || All freecam dummy mannequins of the executing player are disconnected from the player. Meaning the player can enter and exit the freecam again
+        || without the other mannequins of the player beeing effected
+
+    /function unfinite-freecam:admin/exteral/reconnect_mannequin
+        || The executing disconnected(!) mannequin gets reconnected to the original player
+
+    /function unfinite-freecam:admin/exteral/remove_own
+        || All freecam dummys of the executing player (even disconnected ones) get removed
+
+    /function unfinite-freecam:admin/exteral/remove_all
+        || Every freecam mannequin gets removed
+
+    /function unfinite-freecam:admin/exteral/spawn_replica
+        || Spawn a disconnected mannequin, without entering freecam
