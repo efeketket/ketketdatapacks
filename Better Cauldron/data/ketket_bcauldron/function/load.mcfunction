@@ -1,0 +1,1 @@
+tellraw @a ["","[",{"text":"Better Cauldron v0.1","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/stackraft"}}]

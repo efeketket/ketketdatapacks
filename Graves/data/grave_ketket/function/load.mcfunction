@@ -8,6 +8,7 @@ scoreboard objectives add ket.slot dummy
 scoreboard objectives add ket.bool dummy
 scoreboard objectives add ket.graveID dummy
 scoreboard objectives add ket.expholder dummy
+scoreboard objectives add ket.death_grave deathCount
 
 scoreboard objectives add ket.grave_settings trigger
 scoreboard objectives add ket.graves dummy

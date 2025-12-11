@@ -1,0 +1,1 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:dirt"}}] at @s if block ~ ~ ~ minecraft:water_cauldron run data modify entity @s Item.id set value "minecraft:mud"
