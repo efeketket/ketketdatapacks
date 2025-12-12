@@ -1,1 +1,1 @@
-execute as @e[type=item,nbt={Item:{id:"minecraft:dirt"}}] at @s if block ~ ~ ~ minecraft:water_cauldron run data modify entity @s Item.id set value "minecraft:mud"
+execute as @e[type=item] if data entity @s Thrower at @s if block ~ ~-1 ~ minecraft:water_cauldron positioned ~ ~1 ~ run function ketket_bcauldron:iswashable
