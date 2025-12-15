@@ -1,7 +1,6 @@
-tellraw @a ["","[",{"text":"Better Cauldron v0.1","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/stackraft"}}]
+tellraw @a ["","[",{"text":"Better Cauldron v0.1","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/ketkets-better-cauldrons"}}]
 
 data modify storage ketket_bcauldron:wash dirt set value {id:"minecraft:mud"}
-
 data modify storage ketket_bcauldron:wash white_concrete_powder set value {id:"minecraft:white_concrete"}
 data modify storage ketket_bcauldron:wash yellow_concrete_powder set value {id:"minecraft:yellow_concrete"}
 data modify storage ketket_bcauldron:wash orange_concrete_powder set value {id:"minecraft:orange_concrete"}
@@ -18,7 +17,6 @@ data modify storage ketket_bcauldron:wash brown_concrete_powder set value {id:"m
 data modify storage ketket_bcauldron:wash black_concrete_powder set value {id:"minecraft:black_concrete"}
 data modify storage ketket_bcauldron:wash gray_concrete_powder set value {id:"minecraft:gray_concrete"}
 data modify storage ketket_bcauldron:wash light_gray_concrete_powder set value {id:"minecraft:light_gray_concrete"}
-
 data modify storage ketket_bcauldron:wash bed set value {id:"minecraft:white_bed"}
 data modify storage ketket_bcauldron:wash shulker set value {id:"minecraft:shulker_box"}
 data modify storage ketket_bcauldron:wash glass set value {id:"minecraft:glass"}
