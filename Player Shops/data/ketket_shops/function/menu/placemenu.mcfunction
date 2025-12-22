@@ -25,6 +25,5 @@ execute unless block ~ ~ ~ minecraft:trapped_chest run function ketket_shops:men
 execute unless data block ~ ~ ~ {Items:[{Slot:18b,id:"minecraft:red_dye"}]} run function ketket_shops:menu/removemenu
 
 
-
 #execute unless block ~ ~ ~ minecraft:chest run tag @s remove menuon
 #execute unless block ~ ~ ~ minecraft:chest run tag @s remove setup

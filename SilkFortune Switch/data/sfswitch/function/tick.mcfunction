@@ -1,0 +1,4 @@
+execute as @e[type=player,advancements={sfswitch:clickdetect=true}] run function sfswitch:clearadv
+
+execute as @e[type=player,nbt={equipment:{offhand:{components:{"minecraft:stored_enchantments":{"minecraft:fortune":3}}}}}] if data entity @s SelectedItem.components.minecraft:enchantments.minecraft:silk_touch unless data entity @s SelectedItem.components."minecraft:lore" run function sfswitch:makesfs
+execute as @e[type=player,nbt={equipment:{offhand:{components:{"minecraft:stored_enchantments":{"minecraft:silk_touch":1}}}}}] if data entity @s SelectedItem.components.minecraft:enchantments.minecraft:fortune unless data entity @s SelectedItem.components."minecraft:lore" run function sfswitch:makesfs

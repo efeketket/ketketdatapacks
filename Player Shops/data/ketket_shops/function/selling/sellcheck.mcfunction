@@ -1,4 +1,5 @@
 #execute as @e[type=interaction,tag=playershop,tag=main,limit=1,distance=..1,tag=empty] at @s run data modify entity @e[type=text_display,limit=1,tag=displaytext,sort=nearest] text set value '{"bold":true,"color":"red","text":"Out of Stock!"}'
+
 tag @s add customer
 data modify entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".SellingHolder set from entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".Price
 data remove entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".SellingHolder.count
@@ -17,7 +18,7 @@ execute if score @e[type=interaction,tag=playershop,tag=main,limit=1,distance=..
 data modify entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".SellingHolder set from entity @e[type=item_display,sort=nearest,limit=1,tag=shopdata] item.components."minecraft:custom_data".Price
 
 execute as @e[type=interaction,tag=playershop,tag=main,limit=1,distance=..1,tag=!empty,sort=nearest,tag=!inf] at @s if score @s currentstock < @s product_count run tag @s add empty
-execute as @e[type=interaction,tag=playershop,tag=main,limit=1,distance=..1,tag=empty,sort=nearest,tag=!inf] at @s run data modify entity @e[type=text_display,limit=1,tag=displaytext,sort=nearest] text set value '{"bold":true,"color":"red","text":"Out of Stock!"}'
+execute as @e[type=interaction,tag=playershop,tag=main,limit=1,distance=..1,tag=empty,sort=nearest,tag=!inf] at @s run data modify entity @e[type=text_display,limit=1,tag=displaytext,sort=nearest] text set value {"bold":true,"color":"red","text":"Out of Stock!"}
 
 tag @s remove customer
 

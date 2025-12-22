@@ -18,13 +18,11 @@ execute as @s[tag=south] run summon minecraft:text_display ~ ~0.1 ~-0.1 {Tags:["
 execute as @s[tag=north] run summon minecraft:text_display ~ ~0.1 ~0.1 {Tags:["playershop","justspawn","producttext"],text:"",background: 0,interpolation_duration:0,start_interpolation:0,transformation:[0.500f, 0.000f, 0.000f,0.120f,0.000f, 0.500f, 0.000f,0.050f,0.000f, 0.000f, 0.500f,0.320f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.3f}
 summon minecraft:text_display ~ ~0.34 ~ {Tags:["playershop","justspawn","displaytext"],text:"", see_through: 0b,background: 0,billboard:"center",interpolation_duration:0,start_interpolation:0,transformation:[0.500f, 0.000f, 0.000f,0.000f,0.000f, 0.500f, 0.000f,0.650f,0.000f, 0.000f, 0.500f,0.000f,0.000f, 0.000f, 0.000f,1.000f],view_range:0.3f}
 
-data modify entity @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] item.components."minecraft:custom_data".Owner set from entity @p[scores={isPlaced=1}] UUID
-advancement grant @p[scores={isPlaced=1}] only ketket_shops:sp_adv_3 requirement 
-execute as @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
+#data modify entity @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] item.components."minecraft:custom_data".Owner set from entity @p[scores={isPlaced=1}] UUID
+#execute as @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
 
-scoreboard players set @p[scores={isPlaced=1..}] isPlaced 0
-
-execute as @e[tag=justspawn] run tag @s remove justspawn
+advancement grant @p[scores={isPlaced=1..}] only ketket_shops:sp_adv_3
+scoreboard players operation @e[tag=justspawn,tag=playershop] unique_shopid = @p[scores={isPlaced=1..}] unique_shopid
 
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] totalstock_chestcount 1
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] totalstock 1728
@@ -34,5 +32,7 @@ scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] glass_dye 0
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] wool_dye 0
 
+scoreboard players set @p[scores={isPlaced=1..}] isPlaced 0
+execute as @e[tag=justspawn] run tag @s remove justspawn
 kill @s
 
