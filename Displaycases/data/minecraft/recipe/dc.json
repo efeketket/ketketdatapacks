@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " / ",
+        "/G/",
+        " / "
+    ],
+    "key": {
+        "/": "minecraft:stick",
+        "G": "minecraft:glass"
+    },
+    "result": {
+        "id": "minecraft:glow_item_frame",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": {"text": "Display Case", "italic": false},
+            "minecraft:custom_data": {"ket.dc":1}
+
+        }
+
+    }
+}

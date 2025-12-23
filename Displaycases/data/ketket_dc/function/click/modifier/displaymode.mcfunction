@@ -1,0 +1,3 @@
+summon minecraft:item_display ~ ~-0.4 ~ {Tags:["ket.dc","display"],Passengers:[{id:"minecraft:item",NoGravity:1b,Silent:1b,Health:999,PickupDelay:32767,Item:{id:"minecraft:diamond",count:1},Tags:["ket.dc","display"]}]}
+data modify entity @e[tag=ket.dc,tag=display,type=item,sort=nearest,limit=1] Item set from entity @e[tag=ket.dc,tag=item,type=item_display,sort=nearest,limit=1] item
+data remove entity @e[tag=ket.dc,tag=item,type=item_display,sort=nearest,limit=1] item

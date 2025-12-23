@@ -6,34 +6,19 @@
         "entries": [
           {
             "type": "item",
-            "name": "minecraft:cod_spawn_egg",
+            "name": "minecraft:glow_item_frame",
             "functions": [
               {
                 "function": "set_name",
                 "name": {
-                  "text": "Mannequin Spawn Egg"
+                  "text": "Display Case",
+                  "italic": false
                 },
                 "entity": "this"
               },
               {
                 "function": "set_custom_data",
-                "tag": "{ket.npc:1}"
-              },
-              {
-            "function": "set_components",
-              "components": {
-                "minecraft:entity_data": {
-                  "id": "minecraft:cod",
-                  "Silent": true,
-                  "Invulnerable": true,
-                  "NoAI": true,
-                  "Tags": [
-                    "ket.npc"
-                ],
-                "DeathLootTable": "minecraft:empty",
-                  "DeathLootTableSeed": 0
-                }
-              }
+                "tag": "{ket.dc:1b}"
               }
             ]
           }

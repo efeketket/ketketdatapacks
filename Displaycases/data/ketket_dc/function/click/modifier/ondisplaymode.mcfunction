@@ -1,0 +1,2 @@
+data modify entity @e[tag=ket.dc,type=item_display,sort=nearest,limit=1,distance=..1] item set from entity @e[tag=ket.dc,tag=display,type=item,sort=nearest,limit=1,distance=..1] Item
+kill @e[tag=ket.dc,tag=display,sort=nearest,limit=2,distance=..0.4]

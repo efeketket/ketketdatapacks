@@ -1,7 +1,5 @@
-scoreboard objectives remove npc.shifting
-scoreboard objectives remove npc.pose
-scoreboard objectives remove npc.id
-scoreboard objectives remove npc.hp
+scoreboard objectives remove dc.shift
+execute as @e[tag=ket.dc,type=interaction] at @s run function ketket_dc:click/left
 
-kill @e[tag=ket.npc]
-tellraw @a ["","[Ketket's Mannequins]",{"text":" Datapack successfully uninstalled. All Ketket's Mannequins materials cleared from loaded chunks. You can safely disable datapack.","color":"dark_green"}]
+tellraw @a ["","[Ketket's Displaycases]",{"text":" Datapack successfully uninstalled. All Ketket's Displaycases materials cleared from loaded chunks. You can safely disable datapack.","color":"dark_green"}]
+
