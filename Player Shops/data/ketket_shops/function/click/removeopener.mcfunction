@@ -1,1 +1,1 @@
-$execute as @p[nbt={UUID:$(Owner)}] run tag @s remove menuopener
+#execute as @p[] run tag @s remove menuopener

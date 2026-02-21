@@ -1,4 +1,4 @@
-tellraw @a ["","[",{"text":"Player Shops v4.0","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/ketkets-player-shops"}}]
+tellraw @a ["","[",{"text":"Player Shops v4.1","color":"gold"},"] ",{"text":"Datapack has been reloaded. Check if there is a new version available. ","color":"green"},{"text":"Modrinth","underlined":true,"color":"white",click_event:{"action":"open_url","url":"https://modrinth.com/datapack/ketkets-player-shops"}}]
 
 scoreboard objectives add isPlaced minecraft.used:minecraft.player_head
 scoreboard objectives add ket.place trigger
@@ -19,6 +19,7 @@ scoreboard objectives add currentstock_add dummy
 
 scoreboard objectives add unique_shopid dummy
 scoreboard players add #unique_shopid unique_shopid 0
+
 scoreboard objectives add boolean_shop dummy
 scoreboard objectives add product_price dummy
 scoreboard objectives add product_count dummy

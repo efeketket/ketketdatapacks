@@ -23,8 +23,8 @@
           ],
           "DeathLootTable": "minecraft:empty",
             "Silent": true,
-            "NoAI": true,
             "Invulnerable": true,
+            "NoAI": true,
             "DeathLootTableSeed": 0          
         }
 

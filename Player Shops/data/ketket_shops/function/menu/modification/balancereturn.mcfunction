@@ -15,8 +15,8 @@ execute if score @s totalearn matches ..64 run tag @s remove earnwithdraw
 execute if score @s totalearn matches ..64 run scoreboard players operation @s totalearn_msg += @s totalearn
 execute if score @s totalearn matches ..64 run scoreboard players set @s totalearn 0
 
-execute if score @s totalearn matches 0 run execute as @a[tag=menuopener,distance=..8] run tellraw @s ["","[",{text:"Player Shop",color:"green"},"]",{text:" x",color:"gold"},{score:{name:"@e[type=interaction,sort=nearest,limit=1]",objective:"totalearn_msg"},color:"gold"}," ",{nbt:"item.components.'minecraft:custom_data'.Price.id","entity":"@e[type=item_display,sort=nearest,tag=shopdata,limit=1]","color":"gold"},""," Collected from shop."]
-execute if score @s totalearn matches 0 run execute as @a[tag=menuopener,distance=..8] run playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 1 1
+execute if score @s totalearn matches 0 run execute as @p[tag=menuopener,distance=..8] run tellraw @s ["","[",{text:"Player Shop",color:"green"},"]",{text:" x",color:"gold"},{score:{name:"@e[type=interaction,sort=nearest,limit=1]",objective:"totalearn_msg"},color:"gold"}," ",{nbt:"item.components.'minecraft:custom_data'.Price.id","entity":"@e[type=item_display,sort=nearest,tag=shopdata,limit=1]","color":"gold"},""," Collected from shop."]
+execute if score @s totalearn matches 0 run execute as @p[tag=menuopener,distance=..8] run playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 1 1
 execute if score @s totalearn matches 0 run scoreboard players set @s totalearn_msg 0
 
 execute as @s[tag=quickremover1] if score @s totalearn matches ..64 run data modify entity @e[type=item_display,sort=nearest,tag=shopdata,limit=1] item.components."minecraft:custom_data".Price set value [{}]

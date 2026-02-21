@@ -11,13 +11,14 @@
               {
                 "function": "set_name",
                 "name": {
-                  "text": "Mannequin Spawn Egg"
+                  "text": "Mannequin Spawn Egg",
+                  "italic": false
                 },
                 "entity": "this"
               },
               {
                 "function": "set_custom_data",
-                "tag": "{ket.npc:1}"
+                "tag": "{ket.npc:1b}"
               },
               {
             "function": "set_components",

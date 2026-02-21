@@ -22,7 +22,7 @@ summon minecraft:text_display ~ ~0.34 ~ {Tags:["playershop","justspawn","display
 #execute as @e[type=item_display,tag=justspawn,tag=shopdata,limit=1] run data modify entity @s item.components."minecraft:custom_data".OwnerHolder set from entity @s item.components."minecraft:custom_data".Owner
 
 advancement grant @p[scores={isPlaced=1..}] only ketket_shops:sp_adv_3
-scoreboard players operation @e[tag=justspawn,tag=playershop] unique_shopid = @p[scores={isPlaced=1..}] unique_shopid
+scoreboard players operation @e[tag=justspawn,tag=playershop] unique_shopid = @p[scores={isPlaced=1}] unique_shopid
 
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] totalstock_chestcount 1
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] totalstock 1728
@@ -32,7 +32,7 @@ scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] glass_dye 0
 scoreboard players add @e[type=interaction,tag=playershop,tag=main,sort=nearest,limit=1] wool_dye 0
 
-scoreboard players set @p[scores={isPlaced=1..}] isPlaced 0
+scoreboard players set @p[scores={isPlaced=1}] isPlaced 0
 execute as @e[tag=justspawn] run tag @s remove justspawn
 kill @s
 
