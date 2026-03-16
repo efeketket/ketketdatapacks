@@ -31,6 +31,9 @@ clear @p[tag=diedplayer]
 experience set @p[tag=diedplayer] 0 levels
 experience set @p[tag=diedplayer] 0 points
 
+execute run data modify storage minecraft:inventory Inventory set value []
+execute run data modify storage minecraft:inventory Equipment set value []
+execute run data modify storage minecraft:inventory XpLevel set value []
 
 execute run execute as @e[tag=justspawn] run tag @s remove justspawn
 kill @s

@@ -1,1 +1,0 @@
-$execute at @n[tag=return_unfinite_freecam_dummy,type=interaction] run tp @s ~ ~ ~ $(yaw) $(pitch)

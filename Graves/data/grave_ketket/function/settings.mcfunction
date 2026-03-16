@@ -10,4 +10,4 @@ data modify storage minecraft:ket.settings is_enabled set value 1
 data modify storage death Pos set value [0.0d,0.0d,0.0d]
 data modify storage minecraft:inventory Inventory set value []
 data modify storage dimension Dimension set value [""]
-gamerule keepInventory true
+gamerule keep_inventory true
